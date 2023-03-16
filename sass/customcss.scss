@@ -1,0 +1,44 @@
+//SASS
+$font-family-sans-serif: 'Ubuntu', sans-serif;
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 4.2;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//RAW CSS
+
+.foto_carnet{
+    width: 135px;
+    border-radius: 100%;
+}
+.placeHolder{
+    width: 20px;
+}
+.portafolio{
+    filter: invert(1);
+    width: 16px;
+}
+.redes{
+    filter: invert(1);
+    width: 26px;
+}
+.links{
+    text-decoration: none;
+}
+main{
+    min-height: 85vh;
+    padding-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+    .pointRemover{
+        list-style: none;
+        padding: 0;
+    }
+}

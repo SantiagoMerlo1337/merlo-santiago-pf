@@ -1,0 +1,11 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+.foto_carnet{
+    width: 135px;
+    border-radius: 100%;
+}
+.placeHolder{
+    width: 20px;
+    
+}
