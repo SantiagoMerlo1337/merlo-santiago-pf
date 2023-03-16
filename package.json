@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "build": "purgecss --css sass/customcss.css --content index.html -o css/reducido.css"
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
