@@ -22,7 +22,7 @@ export default function RootLayout({
         <html lang="es">
             <body className={`${ubuntu.className} antialiased`}>
                 <NombreRol></NombreRol>
-                <div className="mx-auto px-40">{children}</div>
+                <div className="mx-auto w-10/12">{children}</div>
             </body>
         </html>
     );

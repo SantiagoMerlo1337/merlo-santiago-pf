@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Image from "next/image";
-import styles from "./nombrerol.module.css";
 import img from "../../assets/img/profile_picture.png";
 
 const NombreRol = () => {
