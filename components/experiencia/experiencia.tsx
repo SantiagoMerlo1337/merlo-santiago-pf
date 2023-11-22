@@ -1,15 +1,13 @@
-import React from "react";
-
 const Experiencia = () => {
     return (
-        <div>
-            <h3 className="text-3xl font-bold my-4">Experiencia</h3>
-            <ul className="list-disc ms-7">
+        <section>
+            <h3 className="h3">Experiencia</h3>
+            <ul className="list-none md:list-disc ms-0 md:ms-7">
                 <li className="mb-2">
-                    <h4 className="text-2xl font-medium">
+                    <h4 className="h4">
                         Desarrollo Web Freelance (2022 - Actualidad)
                     </h4>
-                    <p>
+                    <p className="text-justify">
                         Realización de sitios web para diversos clientes,
                         enfocando el diseño en captación de usuarios, la
                         conversión del tráfico y una experiencia de usuario
@@ -20,7 +18,7 @@ const Experiencia = () => {
                     </p>
                 </li>
             </ul>
-        </div>
+        </section>
     );
 };
 

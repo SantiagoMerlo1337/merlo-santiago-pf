@@ -1,12 +1,10 @@
-import React from "react";
-
 const Educacion = () => {
     return (
-        <div>
-            <h3 className="text-3xl font-bold my-4">Educación</h3>
-            <ul className="list-disc ms-7">
+        <section>
+            <h3 className="h3">Educación</h3>
+            <ul className="list-none md:list-disc ms-0 md:ms-7">
                 <li className="mb-2">
-                    <h4 className="text-2xl font-medium">
+                    <h4 className="h4">
                         Ingeniería en Informática (2019 - Actualidad)
                     </h4>
                     <p>
@@ -15,7 +13,7 @@ const Educacion = () => {
                     </p>
                 </li>
                 <li className="mb-2">
-                    <h4 className="text-2xl font-medium">
+                    <h4 className="h4">
                         Modalidad de Informática (2016 - 2018)
                     </h4>
                     <p>
@@ -23,7 +21,7 @@ const Educacion = () => {
                     </p>
                 </li>
             </ul>
-        </div>
+        </section>
     );
 };
 
