@@ -1,4 +1,4 @@
-import Redes_Sociales from "../redes_sociales/redes_sociales";
+import RedSocial from "../red_social/red_social";
 
 const Contacto = () => {
     return (
@@ -10,16 +10,25 @@ const Contacto = () => {
                 <li className="mb-1">linkedin.com/in/santiagomerlo1337</li>
                 <li className="mb-1">+5403492691132</li>
             </ul>
-            <ul>
-                <li>
-                    <a
-                        href={"https://github.com/SantiagoMerlo1337"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-                </li>
+            <ul className="flex gap-2">
+                <RedSocial
+                    href="https://github.com/SantiagoMerlo1337"
+                    color="purple"
+                    src="github.png"
+                    alt="GitHub"
+                ></RedSocial>
+                <RedSocial
+                    href="https://www.linkedin.com/in/santiagomerlo1337/"
+                    color="blue"
+                    src="linkedin.png"
+                    alt="LinkedIn"
+                ></RedSocial>
+                <RedSocial
+                    href="https://wa.me/5403492691132"
+                    color="green"
+                    src="whatsapp.png"
+                    alt="WhatsApp"
+                ></RedSocial>
             </ul>
         </section>
     );
