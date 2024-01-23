@@ -1,6 +1,8 @@
+import Redes_Sociales from "../redes_sociales/redes_sociales";
+
 const Contacto = () => {
     return (
-        <section className="text-center md:text-start">
+        <section className="text-center lg:text-start">
             <h3 className="h3 ">Contacto</h3>
             <ul className="list-none">
                 <li className="mb-1">Rafaela, Santa Fe, Argentina</li>
