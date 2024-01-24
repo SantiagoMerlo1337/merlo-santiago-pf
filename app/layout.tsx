@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
-import NombreRol from "../components/nombrerol/nombrerol";
+import NombreRol from "../components/nombre_rol/nombre_rol";
 
 const ubuntu = Ubuntu({
     subsets: ["latin"],
@@ -9,8 +9,8 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-    title: "Merlo, Santiago - CV ",
-    description: "Este es mi Curriculum Vitae",
+    title: "Merlo, Santiago",
+    description: "Mi Curriculum Vitae 😁",
 };
 
 export default function RootLayout({

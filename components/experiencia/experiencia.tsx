@@ -1,3 +1,7 @@
+import Image from "next/image";
+import imgDescarga from "../../assets/img/direct-download.png";
+import imgPortafolio from "../../assets/img/briefcase.png";
+
 const Experiencia = () => {
     return (
         <section>
@@ -16,6 +20,27 @@ const Experiencia = () => {
                         diversas tecnologías, tales como HTML, CSS, Bootstrap,
                         JavaScript, React, CMS, entre otras.
                     </p>
+                    <div className="flex gap-8 pt-4 pb-2 justify-center lg:justify-start">
+                        <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg">
+                            <Image
+                                className="invert"
+                                src={imgPortafolio}
+                                alt="Descargar"
+                                width={28}
+                            ></Image>
+                            Portafolio
+                        </button>
+
+                        <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg">
+                            <Image
+                                className="invert"
+                                src={imgDescarga}
+                                alt="Descargar"
+                                width={28}
+                            ></Image>
+                            Descargar CV
+                        </button>
+                    </div>
                 </li>
             </ul>
         </section>

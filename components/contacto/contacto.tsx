@@ -14,18 +14,21 @@ const Contacto = () => {
                 <RedSocial
                     href="https://github.com/SantiagoMerlo1337"
                     color="purple"
+                    roundedType="lg"
                     src="github.png"
                     alt="GitHub"
                 ></RedSocial>
                 <RedSocial
                     href="https://www.linkedin.com/in/santiagomerlo1337/"
                     color="blue"
+                    roundedType="lg"
                     src="linkedin.png"
                     alt="LinkedIn"
                 ></RedSocial>
                 <RedSocial
                     href="https://wa.me/5403492691132"
                     color="green"
+                    roundedType="lg"
                     src="whatsapp.png"
                     alt="WhatsApp"
                 ></RedSocial>
