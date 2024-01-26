@@ -1,0 +1,16 @@
+[
+    {
+        "title": "PasionTango",
+        "desc": "Landing Page",
+        "tech": "HTML, CSS, Bootstrap, Javascript, PHP",
+        "site": "www.google.com",
+        "github": "www.google.com"
+    },
+    {
+        "title": "Optica Merlo",
+        "desc": "Landing Page",
+        "tech": "React Vite",
+        "site": "www.google.com",
+        "github": "www.google.com"
+    }
+]

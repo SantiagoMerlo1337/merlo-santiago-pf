@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Ubuntu } from "next/font/google";
 import "./globals.css";
+import "tailwindcss/tailwind.css";
 import NombreRol from "../components/nombre_rol/nombre_rol";
 
 const ubuntu = Ubuntu({
