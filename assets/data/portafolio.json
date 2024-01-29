@@ -3,8 +3,7 @@
         "title": "ViajandoAndo",
         "desc": "App Web de Carpooling",
         "tech": "Python Django, HTML, CSS, Bootstrap, SQLite",
-        "site": "https://www.google.com/",
-        "github": "https://www.google.com/"
+        "github": "https://github.com/SantiagoMerlo1337/viajando-ando"
     },
     {
         "title": "API Rest",
@@ -37,6 +36,6 @@
         "desc": "Landing Page",
         "tech": "Next js, HTML, CSS, Typescript, Tailwindcss",
         "site": "https://merlo-santiago-cv.vercel.app/",
-        "github": "https://www.google.com/"
+        "github": "https://github.com/SantiagoMerlo1337/merlo-santiago-cv"
     }
 ]
