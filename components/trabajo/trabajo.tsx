@@ -15,8 +15,8 @@ interface TrabajoProps {
 const Trabajo: React.FC<TrabajoProps> = (props) => {
     if(props.site != undefined){
         return (
-            <div className="rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold pt-3 pb-2 bg-yellow-300">{props.title}</h3>
+            <div className="rounded-b-3xl shadow-lg">
+                <h3 className="rounded text-2xl font-semibold pt-3 pb-2 bg-yellow-300">{props.title}</h3>
                 {/* <hr className="mx-10"/> */}
                 <p className="text-lg pt-3 pb-1">{props.desc}</p>
                 <p className="italic">{props.tech}</p>
@@ -46,8 +46,8 @@ const Trabajo: React.FC<TrabajoProps> = (props) => {
     }
     else{
         return (
-            <div className="rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold pt-3 pb-2 bg-yellow-300">{props.title}</h3>
+            <div className="rounded-b-3xl shadow-lg">
+                <h3 className="rounded text-2xl font-semibold pt-3 pb-2 bg-yellow-300">{props.title}</h3>
                 {/* <hr className="mx-10"/> */}
                 <p className="text-lg pt-3 pb-1">{props.desc}</p>
                 <p className="italic">{props.tech}</p>
