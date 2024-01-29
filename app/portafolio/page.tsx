@@ -9,8 +9,8 @@ import imgFlechaVolver from "../../public/img/flecha-izquierda.png"
 const Portafolio = () => {
     return (
         <Fragment>
-            <Link href="/" className="float-left rounded-full bg-gray-600 hover:bg-gray-700 p-2 mt-9">
-                <Image src={imgFlechaVolver} alt="Icono flecha volver" width={30} className="invert"></Image>
+            <Link href="/" className="float-left rounded-full bg-gray-600 hover:bg-gray-700 p-2 mt-10">
+                <Image src={imgFlechaVolver} alt="Icono flecha volver" width={20} className="invert"></Image>
             </Link>    
             <div className="container-portafolio">
                 {dataPortafolio.map((props, index) => (
