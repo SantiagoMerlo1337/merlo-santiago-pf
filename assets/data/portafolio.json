@@ -1,16 +1,42 @@
 [
     {
+        "title": "ViajandoAndo",
+        "desc": "App Web de Carpooling",
+        "tech": "Python Django, HTML, CSS, Bootstrap, SQLite",
+        "site": "https://www.google.com/",
+        "github": "https://www.google.com/"
+    },
+    {
+        "title": "API Rest",
+        "desc": "Simple CRUD en API Rest",
+        "tech": "Nodejs & Express",
+        "github": "https://github.com/SantiagoMerlo1337/api-rest-nodejs-express"
+    },
+    {
+        "title": "Clerk Auth",
+        "desc": "Simple Autenticación con Clerk",
+        "tech": "Next js, HTML, CSS, Typescript, Tailwindcss, Clerk",
+        "github": "https://github.com/SantiagoMerlo1337/nextjs_clerk_auth"
+    },
+    {
         "title": "PasionTango",
         "desc": "Landing Page",
         "tech": "HTML, CSS, Bootstrap, Javascript, PHP",
-        "site": "www.google.com",
-        "github": "www.google.com"
+        "site": "https://www.pasiontango.ar/",
+        "github": "https://github.com/SantiagoMerlo1337/pasion-tango-landing-page"
     },
     {
         "title": "Optica Merlo",
         "desc": "Landing Page",
-        "tech": "React Vite",
-        "site": "www.google.com",
-        "github": "www.google.com"
+        "tech": "Vite React",
+        "site": "https://www.opticamerlo.com.ar/",
+        "github": "https://github.com/SantiagoMerlo1337/optica-merlo-landing-page/tree/vite-react-refactor"
+    },
+    {
+        "title": "Curriculum Vitae",
+        "desc": "Landing Page",
+        "tech": "Next js, HTML, CSS, Typescript, Tailwindcss",
+        "site": "https://merlo-santiago-cv.vercel.app/",
+        "github": "https://www.google.com/"
     }
 ]
