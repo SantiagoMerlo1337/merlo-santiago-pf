@@ -3,8 +3,6 @@ import Link from "next/link";
 import imgDescarga from "../../assets/img/direct-download.png";
 import imgPortafolio from "../../assets/img/briefcase.png";
 
-FIXME: import fileCv from "../../public/files/Merlo, Santiago_CV.pdf";
-
 const Experiencia = () => {
     return (
         <section>
@@ -37,17 +35,15 @@ const Experiencia = () => {
                         </Link>
 
                         <Link href="/portafolio">
-                            <a href={fileCv} download="Curriculum Vitae">
-                                <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg">
-                                    <Image
-                                        className="invert"
-                                        src={imgDescarga}
-                                        alt="Descargar"
-                                        width={28}
-                                    ></Image>
-                                    Descargar CV
-                                </button>
-                            </a>
+                            <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg">
+                                <Image
+                                    className="invert"
+                                    src={imgDescarga}
+                                    alt="Descargar"
+                                    width={28}
+                                ></Image>
+                                Descargar CV
+                            </button>
                         </Link>
                     </div>
                 </li>
