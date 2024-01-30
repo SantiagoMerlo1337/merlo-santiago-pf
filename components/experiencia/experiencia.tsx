@@ -33,8 +33,8 @@ const Experiencia = () => {
                                 Portafolio
                             </button>
                         </Link>
-
-                        <Link href="/portafolio">
+                        
+                        <a href="/static/pdf/Merlo-Santiago_CV.pdf" download>
                             <button className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white p-2 rounded-lg">
                                 <Image
                                     className="invert"
@@ -44,7 +44,7 @@ const Experiencia = () => {
                                 ></Image>
                                 Descargar CV
                             </button>
-                        </Link>
+                        </a>
                     </div>
                 </li>
             </ul>
