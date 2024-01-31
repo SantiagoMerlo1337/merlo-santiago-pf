@@ -12,6 +12,9 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
     title: "Merlo, Santiago",
     description: "Mi Curriculum Vitae 😁",
+    icons:{
+        icon:"/favicon.ico"
+    }
 };
 
 export default function RootLayout({
