@@ -6,12 +6,36 @@ import imgPresentacion from '../assets/img/imagen-home.jpg'
 
 <Layout title="Santiago Merlo">
 	<main>
-		<h1 class="text-6xl font-bold mb-14">Hola! Soy <span class="text-secondary">Santiago Merlo</span>, desarrollador web fullstack.</h1>
-		<section class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad aliquid esse autem, sapiente inventore facere eos dolorum itaque, veritatis blanditiis nostrum impedit optio. Cum expedita magnam itaque sunt obcaecati corporis quasi quaerat, autem asperiores commodi totam dignissimos laborum? Provident reprehenderit deleniti libero dolore? Sunt adipisci voluptatibus rem hic tempore praesentium sed vitae recusandae mollitia. Beatae enim reiciendis cupiditate dignissimos at voluptates, quod omnis commodi repellendus quidem, quae a consequuntur deserunt voluptas fugit? Ut exercitationem voluptates delectus quod expedita. Veritatis ratione accusantium harum doloremque id numquam nostrum reprehenderit omnis, vitae, molestiae quam quidem itaque illum adipisci sapiente, non quasi nisi!
-			</p>
-			<Image class="rounded-xl w-64 mx-auto" src={imgPresentacion} alt="Santiago Merlo"></Image>
+		<h1 class="text-5xl md:text-6xl font-bold mb-14 text-center">Hola! Soy <span class="text-secondary">Santiago Merlo</span>, desarrollador web fullstack.</h1>
+		<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+			<div class="flex flex-wrap gap-4">
+				<p class="font-light text-center sm:text-start">
+					Soy un desarrollador web <strong class="font-bold">fullstack</strong> con experiencia en diversas tecnologías y habilidades relacionadas con el desarrollo de aplicaciones web y la programación. Me apasiona crear <strong class="font-bold">soluciones</strong> que mejoren la experiencia del usuario y aporten valor a los clientes.
+				</p>
+				<ul>
+					<li class="mb-2">
+						<h4 class="text-primary font-medium">Desarrollo Web Full Stack</h4>
+						<p class="font-light text-sm">HTML, CSS, Bootstrap, Tailwind, JavaScript, TypeScript, Next.js, Astro, Python Django, React y Material UI</p>
+					</li>
+					<li class="mb-2">
+						<h4 class="text-primary font-medium">Programación</h4>
+						<p class="font-light text-sm">POO, C#, .NET, Python, MVC, API REST</p>
+					</li>
+					<li class="mb-2">
+						<h4 class="text-primary font-medium">Bases de Datos</h4>
+						<p class="font-light text-sm">SQL, OQL, SQL Server, MySQL, Modelado de datos</p>
+					</li>
+					<li class="mb-2">
+						<h4 class="text-primary font-medium">Controlador de versiones</h4>
+						<p class="font-light text-sm">Git, GitHub</p>
+					</li>
+					<li class="mb-2">
+						<h4 class="text-primary font-medium">Otros</h4>
+						<p class="font-light text-sm">UML, Photoshop, Illustrator, paquete Office</p>
+					</li>
+				</ul>
+			</div>
+			<Image class="bg-img rounded-xl w-72 mx-auto" src={imgPresentacion} alt="Santiago Merlo"></Image>
 		</section>
 	</main>
 </Layout>
