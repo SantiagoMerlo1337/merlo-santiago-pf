@@ -1,4 +1,5 @@
 ---
+import Header from '../components/Header.astro';
 interface Props {
 	title: string;
 }
@@ -7,35 +8,46 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Este es mi Curriclum Vitae 😄" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-		<slot />
+	<body class="background-img h-screen">
+		<Header></Header>
+		<div class="py-8 px-4 mx-auto max-w-3xl lg:py-16 lg:px-6"> 
+			<slot />
+		</div>
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
+		/* --color-dark: #400403; */
+		--color-dark: #2f0606;
+		--color-light: #efeecc;
+		--color-primary: #fe8b05;
+		--color-secondary: #fe0557;
+		--color-tertiary: #0aabba;
 		--accent-gradient: linear-gradient(
 			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
+			rgb(var(--color-dark)),
+			rgb(var(--color-light)) 30%,
 			white 60%
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
+		font-family: 'Roboto', sans-serif;
+		/* background: var(--color-dark); */
+		background: black;
 		background-size: 224px;
+		color: var(--color-light);
 	}
 	code {
 		font-family:
@@ -48,4 +60,25 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
+	/* .background-img{
+		background-image: url(../assets/img/background-red.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	} */
+	.background-dark{
+		background-color: var(--color-dark);
+	}
+	.background-light{
+		background-color: var(--color-light);
+	}
+	.text-primary{
+		color: var(--color-primary);
+	}
+	.text-secondary{
+		color: var(--color-secondary);
+	}
+	.text-tertiary{
+		color: var(--color-tertiary);
+	}
+
 </style>
