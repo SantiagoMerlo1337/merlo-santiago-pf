@@ -1,15 +1,26 @@
 ---
 import { Image } from "astro:assets";
-import logoSM from "../assets/img/logo.png"
+import logoSM from "../assets/img/logo-sin-fondo.png"
+import iconLinkedIn from "../assets/img/social_network/linkedin.png"
+import iconGitHub from "../assets/img/social_network/github.png"
+import iconWhatsApp from "../assets/img/social_network/whatsapp.png"
 ---
 
 <header>
-    <nav class="flex justify-between px-8 py-2 items-center">
+    <nav class="flex justify-between px-4 sm:px-28 py-3 items-center">
         <Image src={logoSM} alt="Santiago Merlo" class="w-8"></Image>
-        <div class="flex gap-4">
-            <p>Linkedin</p>
-            <p>Github</p>
-            <p>WhatsApp</p>
+        <div class="flex gap-6">
+            <a href="https://www.linkedin.com/in/santiagomerlo1337/" target="_blank">
+                <Image class="invert w-7" src={iconLinkedIn} alt="Icono LinkedIn"></Image>
+            </a>
+            <a href="https://github.com/SantiagoMerlo1337" target="_blank">
+                <Image class="invert w-7" src={iconGitHub} alt="Icono Github"></Image>
+            </a>
+            <a href="https://wa.me/5403492691132" target="_blank">
+                <Image class="invert w-7" src={iconWhatsApp} alt="Icono WhatsApp"></Image>
+            </a>
+
+        
         </div>
     </nav>
 </header>
