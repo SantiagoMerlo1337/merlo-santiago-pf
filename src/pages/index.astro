@@ -1,41 +1,44 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Skill from '../components/Skill.astro'
 import { Image } from 'astro:assets';
 import imgPresentacion from '../assets/img/imagen-home.jpg'
 ---
 
 <Layout title="Santiago Merlo">
 	<main>
-		<h1 class="text-5xl md:text-6xl font-bold mb-14 text-center">Hola! Soy <span class="text-secondary">Santiago Merlo</span>, desarrollador web fullstack.</h1>
-		<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+		<h1 class="text-5xl md:text-7xl font-bold mb-14 text-center">Hola! Soy <span class="text-primary">Santiago Merlo</span>, desarrollador web <span class="cursor-animation">fullstack.</span></h1>
+		<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center mb-6">
 			<div class="flex flex-wrap gap-4">
-				<p class="font-light text-center sm:text-start">
+				<p class="font-light text-center sm:text-start text-xl">
 					Soy un desarrollador web <strong class="font-bold">fullstack</strong> con experiencia en diversas tecnologías y habilidades relacionadas con el desarrollo de aplicaciones web y la programación. Me apasiona crear <strong class="font-bold">soluciones</strong> que mejoren la experiencia del usuario y aporten valor a los clientes.
 				</p>
 				<ul>
-					<li class="mb-2">
-						<h4 class="text-primary font-medium">Desarrollo Web Full Stack</h4>
-						<p class="font-light text-sm">HTML, CSS, Bootstrap, Tailwind, JavaScript, TypeScript, Next.js, Astro, Python Django, React y Material UI</p>
-					</li>
-					<li class="mb-2">
-						<h4 class="text-primary font-medium">Programación</h4>
-						<p class="font-light text-sm">POO, C#, .NET, Python, MVC, API REST</p>
-					</li>
-					<li class="mb-2">
-						<h4 class="text-primary font-medium">Bases de Datos</h4>
-						<p class="font-light text-sm">SQL, OQL, SQL Server, MySQL, Modelado de datos</p>
-					</li>
-					<li class="mb-2">
-						<h4 class="text-primary font-medium">Controlador de versiones</h4>
-						<p class="font-light text-sm">Git, GitHub</p>
-					</li>
-					<li class="mb-2">
-						<h4 class="text-primary font-medium">Otros</h4>
-						<p class="font-light text-sm">UML, Photoshop, Illustrator, paquete Office</p>
-					</li>
+					<Skill title='Desarrollo Web Full Stack' description='HTML, CSS, Bootstrap, Tailwind, JavaScript, TypeScript, React, Material UI, Nextjs, Astro, Python Django'></Skill>
+					<Skill title='Programación' description='POO, C#, .NET, Python, MVC, API REST'></Skill>
+					<Skill title='Bases de Datos' description='SQL, OQL, SQL Server, MySQL, Modelado de datos'></Skill>
+					<Skill title='Controlador de versiones' description='Git, Github'></Skill>
+					<Skill title='Otros' description='UML, Photoshop, Illustrator, paquete Office'></Skill>
 				</ul>
 			</div>
-			<Image class="bg-img rounded-xl w-72 mx-auto" src={imgPresentacion} alt="Santiago Merlo"></Image>
+			<Image class="bg-img rounded-xl mx-auto object-cover sm:object-contain h-3/4 sm:h-auto" src={imgPresentacion} alt="Santiago Merlo"></Image>
 		</section>
+
+		
+
+		<!-- <h3 class="mx-auto w-24 font-bold text-4xl py-6 text-primary">Educación</h3>
+		<p class="text-xl font-light">Actualmente cursando el último año de la carrera Ingeniería en Informática - <span class="italic">Universidad Católica de Santiago del Estero (Rafaela, Santa Fe, Argentina)</span> </p> -->
 	</main>
 </Layout>
+
+<style>
+	.cursor-animation{
+		border-right: 3px solid;
+		animation: efecto .5s step-end infinite alternate;
+	}
+	@keyframes efecto {
+		50%{
+			border-color: transparent;
+		}
+	}
+</style>
