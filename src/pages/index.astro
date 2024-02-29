@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Skill from '../components/Skill.astro'
 import { Image } from 'astro:assets';
 import imgPresentacion from '../assets/img/imagen-home.jpg'
+import videoPortafolio from '../assets/video/portafolio.mp4'
 ---
 
 <Layout title="Santiago Merlo">
@@ -24,15 +25,48 @@ import imgPresentacion from '../assets/img/imagen-home.jpg'
 			<Image class="rounded-xl mx-auto object-cover sm:object-contain h-3/4 sm:h-auto" width={500} src={imgPresentacion} alt="Santiago Merlo"></Image>
 		</section>
 
-		<article class="w-3/4 mx-auto">
-			<h4>Portafolio ⬇️</h4>
-			<div class="bg-white p-24 rounded-xl">.</div>
-		</article>
+		<h4 class="text-6xl font-bold w-1/2 mx-auto text-center pt-8 pb-6">Mis proyectos</h4>
+
+		<a id="video-container" class="block w-2/3 mx-auto" href="#">
+			<article class="video-article-container rounded-2xl">
+				<video id="mi-video" src={videoPortafolio} class="h-64 w-1/2 mx-auto"></video>
+			</article>
+		</a>
 		
 	</main>
+	<script>
+		var videoContainer = document.getElementById('video-container') as HTMLAnchorElement
+		var video = document.getElementById('mi-video') as HTMLVideoElement;
+		if(video instanceof HTMLVideoElement) {
+
+			videoContainer.addEventListener('mouseover', function() {
+				video.play();
+			});
+
+			videoContainer.addEventListener('ended', function() {
+				video.pause();
+			});
+
+		} else {
+			console.error('El elemento obtenido no es un elemento de video.');
+		}
+		
+	</script>
+
 </Layout>
 
 <style>
+	.video-article-container{
+		transition: box-shadow 0.3s ease;
+		background-color: #efeecc;
+	}
+
+	.video-article-container:hover{
+		box-shadow: 0px 1px 10px 0px rgba(254,139,5,0.75);
+		-webkit-box-shadow: 0px 1px 10px 0px rgba(254,139,5,0.75);
+		-moz-box-shadow: 1px 1px 10px 0px rgba(254,139,5,0.75);
+	}
+
 	.cursor-animation{
 		border-right: 3px solid;
 		animation: efecto .5s step-end infinite alternate;
