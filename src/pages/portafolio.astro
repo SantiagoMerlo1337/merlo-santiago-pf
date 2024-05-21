@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro'
+import { Image } from 'astro:assets';
+import dataPortafolio from '../assets/data/portafolio.json'
+---
+
+<Layout title="Santiago Merlo">
+	<main>
+        <h2 class="text-5xl font-bold text-center mb-14">Últimos proyectos en los que estuve trabajando 💻</h2>
+        <section class="container-portafolio">
+            {dataPortafolio.map((props) => (
+                <Project
+                title={props.title}
+                desc={props.desc}
+                tech={props.tech}
+                site={props.site}
+                github={props.github}
+                />
+            ))}
+        </section>
+	</main>
+</Layout>
+
+<style>
+    .container-portafolio{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        -webkit-column-gap: 15px;
+        column-gap: 25px;
+        row-gap: 40px;
+    }
+</style>
