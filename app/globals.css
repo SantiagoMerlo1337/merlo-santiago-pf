@@ -5,7 +5,7 @@
 @import url("../styles/theme.css");
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto_Mono", sans-serif;
 }
 
 @layer utilities {
@@ -20,36 +20,6 @@ body {
     .flex-start {
         @apply flex justify-start items-center;
     }
-
-    .btn {
-        @apply bg-primary-500 text-white py-2 px-4 rounded hover:bg-primary-800  !important;
-    }
-
-    .background-custom-gradient {
-        /* background: rgb(131,58,180);
-        background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 35%, rgba(252,176,69,1) 100%);  */
-        background: rgb(39, 17, 53);
-        background: linear-gradient(
-            0deg,
-            rgba(39, 17, 53, 1) 0%,
-            rgba(64, 11, 23, 1) 100%
-        );
-    }
-
-    .background-custom2-gradient {
-        background: rgb(22, 88, 100);
-        background: linear-gradient(
-            0deg,
-            rgb(10, 63, 66) 0%,
-            rgba(22, 35, 100, 1) 100%
-        );
-    }
-
-    .background-custom3-gradient {
-        background: rgb(10,56,46);
-        background: linear-gradient(0deg, rgba(10,56,46,1) 0%, rgba(8,16,60,1) 100%); 
-    }
-
 }
 
 .no-focus {
@@ -65,4 +35,24 @@ body {
 .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+.cursor-animation{
+    /* font-family: monospace;    */
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 10ch;
+
+    animation: typing 2s steps(10), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    /* font-size: 52px; */
+}
+
+@keyframes typing {
+    from {width: 0;}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
 }

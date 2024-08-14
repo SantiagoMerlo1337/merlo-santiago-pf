@@ -9,27 +9,32 @@ module.exports = {
   theme: {
       container: {
           center: true,
-          padding: "2rem",
+          padding: {
+            DEFAULT: "2rem", // Padding de 2rem para pantallas pequeñas
+            xl: "16rem", // Incrementa el padding en pantallas grandes (lg y mayores)
+          },
           screens: {
-              "2xl": "1400px",
+            sm: "100%", // Para pantallas pequeñas
+            md: "100%", // Para pantallas medianas
+            lg: "1024px", // Para pantallas grandes
+            xl: "1280px", // Para pantallas extra grandes
+            "2xl": "1400px", // Para pantallas de 2XL, como especificaste
           },
       },
       extend: {
           colors: {
               primary: {
-                  500: "#162364",
-                  800: "#0b1233",
+                  500: "#F90A59",
               },
               secondary: {
-                  500: "#FF6347",
+                  500: "#FE8B05",
               },
               tertiary: {
-                  
+                  500: "#EFEECC",
               }
           },
           fontFamily: {
               inter: ["var(--font-inter)"],
-              spaceGrotesk: ["var(--font-spaceGrotesk)"],
           },
           screens: {
               xs: "420px",
