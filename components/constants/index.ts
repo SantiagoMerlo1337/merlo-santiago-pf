@@ -1,4 +1,4 @@
-import { SocialNetwork } from "@/types"
+import { SocialNetwork, TechInfo } from "@/types"
 
 
 // Images
@@ -12,6 +12,10 @@ export const socialNetworkImages = {
     linkedin: "/assets/images/social_network/linkedin.png",
     github: "/assets/images/social_network/github.png",
     whatsapp: "/assets/images/social_network/whatsapp.png",
+}
+
+export const techImages = {
+
 }
 
 
@@ -35,3 +39,22 @@ export const socialNetwork: SocialNetwork[] = [
     },
 ]
 
+export const techInfo: TechInfo = {
+    Nextjs: 'Next Description',
+    Typescript: 'Typescript Description',
+    MongoDB: 'MongoDB Description',
+    Clerk: 'Clerk Description',
+    Shadcn: 'Shadcn Description',
+    TinyMCE: 'TinyMCE Description',
+    Zod: 'Zod Description',
+    PythonDjango: 'Django Description',
+    Javascript: 'Javascript Description',
+    HTML: 'HTML Description',
+    CSS: 'CSS Description',
+    PHP: 'PHP Description',
+    Nodejs: 'Nodejs Description',
+    Express: 'Express Description',
+    Bootstrap: 'Bootstrap Description',
+    SQLite: 'SQLite Description',
+    Tailwindcss: 'Tailwindcss Description',
+}
