@@ -1,6 +1,7 @@
 import Skill from "@/components/shared/Skill"
 import Image from "next/image"
 import { Inter } from "next/font/google"
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,13 +36,15 @@ const Page = () => {
           </ul>
         </section>
         <Image className="rounded w-[428px] mx-auto" src="/assets/images/santiago-merlo.jpg" width={428} height={570} alt="Santiago Merlo"/>
-        {/* <Image className="rounded-lg w-full sm:w-1/2 md:w-full mx-auto" src="/assets/images/santiago-merlo.jpg" width={428} height={570} alt="Santiago Merlo"/> */}
       </div>
 
-      <div className="flex-center">
-        <h3 className="h3-bold inline px-4 bg-primary-500">Mis proyectos</h3>
-        <p className="">./portafolio</p>
-      </div>
+      <Link href="/portafolio" className="flex-center">
+        <div className="h3-bold flex gap-4 px-4 py-1 bg-primary-500">
+          <h3>{`Mis proyectos {}`}</h3>
+          {/* <Image className="invert object-contain" src="/assets/icons/prueba.png" width={36} height={36} alt="prueba"/>  */}
+        </div>
+        <p className="ms-2 opacity-50">./portafolio</p>
+      </Link>
 
 
     </>

@@ -1,11 +1,14 @@
 import Image from "next/image"
 import { logoImages, socialNetwork } from "../constants/index"
+import Link from "next/link"
 
 const Navbar = () => {
   return (
     <nav className="bg-black py-3 px-6 lg:px-28">
       <div className="flex-between">
-        <Image width={32} height={32} src={logoImages.logoSinFondo} alt="Logo" />
+        <Link href="/">
+          <Image className="object-contain" width={38} height={38} src={logoImages.logoSinFondo} alt="Logo" />
+        </Link>
         <ul className="flex gap-6 ">
           {socialNetwork.map((item) => (
             <li key={item.label}>
