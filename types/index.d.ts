@@ -5,7 +5,7 @@ export interface SocialNetwork {
 }
 
 export type TechInfo = {
-    [techName: string]: string
+    [techName: string]: string[]
 }
 
 export interface ProjectsInfo {
