@@ -1,7 +1,7 @@
 import Skill from "@/components/shared/Skill"
 import Image from "next/image"
 import { Inter } from "next/font/google"
-import Link from "next/link";
+import PortfolioButton from "@/components/shared/PortfolioButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +23,7 @@ const Page = () => {
             />
             <Skill 
             title="Bases de Datos"
-            desc="SQL, OQL, SQL Server, MySQL, Modelado de datos"
+            desc="SQL, OQL, SQL Server, MySQL, MongoDB, Modelado de datos"
             />
             <Skill 
             title="Controlador de Versiones"
@@ -38,15 +38,7 @@ const Page = () => {
         <Image className="rounded w-[428px] mx-auto" src="/assets/images/santiago-merlo.jpg" width={428} height={570} alt="Santiago Merlo"/>
       </div>
 
-      <Link href="/portafolio" className="flex-center">
-        <div className="h3-bold flex gap-4 px-4 py-1 bg-primary-500">
-          <h3>{`Mis proyectos {}`}</h3>
-          {/* <Image className="invert object-contain" src="/assets/icons/prueba.png" width={36} height={36} alt="prueba"/>  */}
-        </div>
-        <p className="ms-2 opacity-50">./portafolio</p>
-      </Link>
-
-
+        <PortfolioButton/>
     </>
   )
 }
