@@ -33,8 +33,9 @@ export default function RootLayout({
     return (
         <html lang="es">
             <body className={`${robotoMono.className} bg-black`}>
-                <Navbar />
-                <Image className="absolute min-h-svh opacity-15 z-0" src="/assets/images/custom-background.png" width={1920} height={1080} alt="Background Image" />
+                <header>
+                    <Navbar />
+                </header>
                 <main className="container my-20 z-10 relative text-tertiary-500">
                     {children}
                 </main>
