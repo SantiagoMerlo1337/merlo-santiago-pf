@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         "Soy un desarrollador web fullstack con experiencia en diversas tecnologías y habilidades relacionadas con el desarrollo de aplicaciones web y la programación.",
     authors:{
         name: "Santiago Merlo",
-        url: "https://merlo-santiago-pf.vercel.app/"
+        url: "https://merlosantiago-pf.vercel.app/"
     },
     creator: "Santiago Merlo",
     publisher: "Santiago Merlo",
