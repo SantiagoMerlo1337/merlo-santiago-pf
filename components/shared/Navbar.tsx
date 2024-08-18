@@ -11,9 +11,11 @@ const Navbar = () => {
         </Link>
         <ul className="flex gap-6 ">
           {socialNetwork.map((item) => (
-            <li key={item.label}>
-              <Image className="invert" width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
-            </li>
+            <Link href={item.href} key={item.label}>
+              <li>
+                <Image width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
+              </li>
+            </Link>
           ))}
         </ul>
       </div>
