@@ -41,17 +41,17 @@ export const socialNetwork: SocialNetwork[] = [
     {
         imgUrl: socialNetworkImages.linkedin,
         label: "LinkedIn",
-        href: "/"
+        href: "https://www.linkedin.com/in/santiagomerlo1337/"
     },
     {
         imgUrl: socialNetworkImages.github,
         label: "Github",
-        href: "/"
+        href: "https://github.com/SantiagoMerlo1337"
     },
     {
         imgUrl: socialNetworkImages.whatsapp,
         label: "WhatsApp",
-        href: "/"
+        href: "https://api.whatsapp.com/send?phone=5493492691132"
     },
 ]
 
