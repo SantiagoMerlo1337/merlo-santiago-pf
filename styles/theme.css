@@ -6,15 +6,11 @@
     /* leading es el 130% del tamaño de fuente */
 
     .h1-bold {
-        @apply text-[61.78px] font-bold leading-[67.114px];
+        @apply text-[48.78px] font-bold leading-[63.114px];
     }
 
     .h2-bold {
         @apply text-[39.81px] font-bold leading-[51.753px];
-    }
-
-    .h2-semibold {
-        @apply text-[39.81px] font-semibold leading-[51.753px];
     }
 
     .h3-bold {

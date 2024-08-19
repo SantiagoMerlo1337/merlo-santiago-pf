@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 const ProjectCard = ({label, desc, techs, ghUrl, siteUrl} : ProjectsInfo) => {
 
   return (
-    <article className="flex flex-col gap-4 bg-black w-full px-8 py-6 outline outline-1 outline-primary-500/55 rounded">
+    <article className="flex flex-col gap-4 background-pattern2 w-full px-8 py-6 outline-tertiary-500 rounded">
       
       <p className="h5-bold">{`// `}{label}</p>
 

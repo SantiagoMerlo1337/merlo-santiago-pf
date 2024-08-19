@@ -16,6 +16,7 @@ const Page = () => {
         desc="App web de Carpooling - 2022"
         techs={['Python Django', 'Bootstrap', 'SQLite']}
         ghUrl="https://github.com/SantiagoMerlo1337/viajando-ando"
+        siteUrl="https://github.com/SantiagoMerlo1337/viajando-ando/wiki"
         />
         <ProjectCard
         label="Optica Merlo"
@@ -41,7 +42,7 @@ const Page = () => {
         desc="Landing Page - 2023"
         techs={['Nextjs', 'Typescript', 'Tailwindcss', 'Shadcn']}
         ghUrl="https://github.com/SantiagoMerlo1337/merlosantiago-cv"
-        siteUrl="/"
+        siteUrl="https://merlosantiago.vercel.app/"
         />
         <ProjectCard
         label="Portafolio"
