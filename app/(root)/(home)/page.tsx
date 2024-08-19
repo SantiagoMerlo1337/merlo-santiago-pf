@@ -38,7 +38,7 @@ const Page = () => {
         <Image className="object-cover w-full h-full max-w-[468px] max-h-[610px] mx-auto rounded" src="/assets/images/santiago-merlo.jpg" width={468} height={610} alt="Santiago Merlo"/>
       </div>
 
-        <Image className="mx-auto mb-6" src="/assets/icons/double-bottom-arrow.svg" width={100} height={100} alt="Doble flecha hacia abajo" />
+        <Image className="updown-animation mx-auto mb-6" src="/assets/icons/double-bottom-arrow.svg" width={75} height={75} alt="Doble flecha hacia abajo" />
 
         <PortfolioButton/>
     </>
