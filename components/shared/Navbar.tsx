@@ -9,15 +9,17 @@ const Navbar = () => {
         <Link href="/">
           <Image className="object-contain" width={38} height={38} src={logoImages.logoSinFondo} alt="Logo" />
         </Link>
+        
         <ul className="flex gap-6 ">
           {socialNetwork.map((item) => (
-            <Link href={item.href} key={item.label} target="_blank">
-              <li>
-                <Image width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
-              </li>
-            </Link>
+            <li key={item.label}>
+              <Link href={item.href} target="_blank">
+                  <Image width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
+              </Link>
+            </li>
           ))}
         </ul>
+
       </div>
     </nav>
   )

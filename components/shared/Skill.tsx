@@ -6,7 +6,7 @@ interface Props {
 const Skill = ({title, desc}: Props) => {
   return (
     <li className="mb-3">
-      <h4 className="text-primary-500 h5-semibold">{title}</h4>
+      <h3 className="text-primary-500 h5-semibold">{title}</h3>
       <p>{desc}</p>
     </li>
   )
