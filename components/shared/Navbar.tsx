@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-black py-3 px-6 lg:px-28">
       <div className="flex-between">
         <Link href="/">
-          <Image className="object-contain" width={38} height={38} src={logoImages.logoSinFondo} alt="Logo" />
+          <Image className="object-contain" width={42} height={42} src={logoImages.logoSinFondo} alt="Logo" />
         </Link>
         
         <ul className="flex gap-6 ">
