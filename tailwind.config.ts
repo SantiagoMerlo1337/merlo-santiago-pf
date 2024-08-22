@@ -11,7 +11,7 @@ module.exports = {
           center: true,
           padding: {
             DEFAULT: "2rem", // Padding de 2rem para pantallas pequeñas
-            xl: "16rem", // Incrementa el padding en pantallas grandes (lg y mayores)
+            xl: "18rem", // Incrementa el padding en pantallas grandes (lg y mayores)
           },
           screens: {
             sm: "100%", // Para pantallas pequeñas

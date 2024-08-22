@@ -8,13 +8,12 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 import Image from "next/image";
-import { Suspense } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 const ProjectCard = ({label, desc, techs, ghUrl, siteUrl} : ProjectsInfo) => {
 
   return (
-    <article className="flex flex-col gap-4 background-pattern2 w-full px-8 py-6 outline-tertiary-500 rounded">
+    <article className="flex flex-col gap-4 border border-secondary-500 bg-black w-full px-8 py-6 outline-tertiary-500 rounded">
       
       <p className="h5-bold">{`// `}{label}</p>
 
@@ -28,9 +27,7 @@ const ProjectCard = ({label, desc, techs, ghUrl, siteUrl} : ProjectsInfo) => {
                 <HoverCardContent>
                   <div className="flex h-full">
                     <div className="w-24 flex-center">
-                      <Suspense>
-                        <Image src={techInfo[techName.replace(/ /g,"")][1]} width={32} height={32} alt={`${techName} Logo`} placeholder="blur"/>
-                      </Suspense>
+                      <Image src={techInfo[techName.replace(/ /g,"")][1]} width={32} height={32} alt={`${techName} Logo`}/>
                     </div>
                     <p className="ms-4 text-shadow">
                       {techInfo[techName.replace(/ /g,"")][0]}
