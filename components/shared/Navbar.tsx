@@ -14,7 +14,7 @@ const Navbar = () => {
           {socialNetwork.map((item) => (
             <li key={item.label}>
               <Link  href={item.href} target="_blank">
-                  <Image className="hover:brightness-50 transition duration-150" width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
+                  <Image className="hover:brightness-75 transition duration-150" width={28} height={28} src={item.imgUrl} alt={`${item.label} logo`} />
               </Link>
             </li>
           ))}
