@@ -14,16 +14,16 @@ const Page = () => {
           <h2 className={`base-regular mb-6 text-center md:text-start`}>Soy un desarrollador web <strong className="font-bold">fullstack</strong> con experiencia en diversas tecnologías y habilidades relacionadas con el desarrollo de aplicaciones web y la programación. Me apasiona crear <strong className="font-bold">soluciones</strong> que mejoren la experiencia del usuario y aporten valor a los clientes.</h2>
           <ul>
             <Skill 
-            title="Desarrollo Web Fullstack"
-            desc="HTML, CSS, Bootstrap, Tailwind, JavaScript, TypeScript, React, Nextjs, Astro, Python Django"
+            title="Frontend"
+            desc="HTML, CSS, Bootstrap, Tailwind, Javascript, Typescript, React, Next js, Astro, Django"
             />
             <Skill 
-            title="Programación"
-            desc="POO, C#, .NET, Python, MVC, API REST"
+            title="Backend"
+            desc="C#, .NET, Python, API REST, MVC"
             />
             <Skill 
             title="Bases de Datos"
-            desc="SQL, OQL, SQL Server, MySQL, MongoDB, Modelado de datos"
+            desc="SQL, MySQL, SQL Server, MongoDB, Modelado de datos"
             />
             <Skill 
             title="Controlador de Versiones"
@@ -31,7 +31,11 @@ const Page = () => {
             />
             <Skill 
             title="Otros"
-            desc="UML, Photoshop, Illustrator, paquete Office"
+            desc="UML, Adobe Photoshop e Illustrator, Inkscape, GIMP, paquete Office"
+            />
+            <Skill 
+            title="Idiomas"
+            desc="Español (Nativo), Inglés (Intermedio)"
             />
           </ul>
         </section>
